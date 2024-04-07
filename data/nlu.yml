@@ -1,0 +1,807 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - hi, how are you?
+    - hey, what's up?
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: thank_you
+  examples: |
+    - thanks
+    - thank you
+    - thanks a lot
+    - thank you so much
+    - appreciate it
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - take care
+    - farewell
+
+- intent: affirm
+  examples: |
+    - yes
+    - yeah
+    - yh
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - What are you?
+
+- intent: what_can_you_do
+  examples: |
+    - What can you do?
+    - Tell me about your capabilities.
+    - What are your functions?
+    - What are you capable of?
+
+- intent: how_can_you_help
+  examples: |
+    - How can you help me?
+    - What assistance can you provide?
+    - Can you support me with something?
+    - In what ways can you assist me?
+
+- intent: offer_additional_information
+  examples: |
+    - Can I some resources?
+    - Can you provide more details?"
+    - Could you give me additional information?
+    - I'd like to know more. Can you help?
+    - Is there anything else I should know?
+    - Do you have more resources available?
+    - Can you offer further insights?
+    - Could you expand on that?
+
+- intent: help_confusion
+  examples: |
+    - Okay
+    - Mmmmh
+    - Mmm
+    - I'm not sure what to do next
+    - I'm a bit lost here
+    - I don't understand
+    - I'm confused
+    - I need more guidance
+
+- intent: explain_anthracnose
+  examples: |
+    - What is Anthracnose?
+    - Can you explain Anthracnose?
+    - Define Anthracnose.
+
+- intent: anthracnose_symptoms
+  examples: |
+    - What are the symptoms of Anthracnose?
+    - How to recognize Anthracnose on tea leaves?
+    - How to identify Anthracnose?
+    - Signs of Anthracnose infection?
+
+- intent: anthracnose_management
+  examples: |
+    - How to manage Anthracnose in tea plantations?
+    - Control measures for Anthracnose?
+    - Strategies to prevent Anthracnose outbreaks?
+
+- intent: explain_algal_leaf
+  examples: |
+    - What is [Algal Leaf](disease)?
+    - Can you explain [Algal Leaf](disease)?
+    - Define [Algal Leaf](disease).
+    - What does [Algal Leaf](disease) mean?
+
+- intent: algal_leaf_symptoms
+  examples: |
+    - What are the symptoms of Algal Leaf disease?
+    - How to identify Algal Leaf on tea leaves?
+    - Signs of Algal Leaf infection?
+    - Symptoms of [Algal Leaf](disease)?
+
+- intent: algal_leaf_management
+  examples: |
+    - How to manage Algal Leaf disease in tea plantations?
+    - Control measures for Algal Leaf disease?
+    - Strategies to prevent Algal Leaf outbreaks?
+    
+- intent: explain_bird_eye_spot
+  examples: |
+    - What is [Bird Eye Spot](disease)?
+    - Can you explain [Bird Eye Spot](disease)?
+    - Define [Bird Eye Spot](disease).
+    - What does [Bird Eye Spot](disease) mean?
+
+- intent: bird_eye_spot_symptoms
+  examples: |
+    - What are the symptoms of Bird Eye Spot disease?
+    - How to recognize Bird Eye Spot on tea leaves?
+    - Signs of Bird Eye Spot infection?
+
+- intent: bird_eye_spot_management
+  examples: |
+    - How to manage Bird Eye Spot disease in tea plantations?
+    - Control measures for Bird Eye Spot disease?
+    - Strategies to prevent Bird Eye Spot outbreaks?
+    
+- intent: explain_brown_blight
+  examples: |
+    - What is [Brown Blight](disease)?
+    - Can you explain [Brown Blight](disease)?
+    - Define [Brown Blight](disease).
+    - What does [Brown Blight](disease) mean?
+
+- intent: brown_blight_symptoms
+  examples: |
+    - What are the symptoms of Brown Blight disease?
+    - How to identify Brown Blight on tea leaves?
+    - Signs of Brown Blight infection?
+
+- intent: brown_blight_management
+  examples: |
+    - How to manage Brown Blight disease in tea plantations?
+    - Control measures for Brown Blight disease?
+    - Strategies to prevent Brown Blight outbreaks?
+
+- intent: gray_light_explanation
+  examples: |
+    - What is Gray Light?
+    - Can you explain Gray Light disease?
+    - Define Gray Light.
+
+- intent: gray_light_symptoms
+  examples: |
+    - What are the symptoms of Gray Light disease?
+    - How to recognize Gray Light on tea leaves?
+    - Signs of Gray Light infection?
+
+- intent: gray_light_management
+  examples: |
+    - How to manage Gray Light disease in tea plantations?
+    - Control measures for Gray Light disease?
+    - Strategies to prevent Gray Light outbreaks?
+
+- intent: gray_light_transmission
+  examples: |
+    - How is Gray Light transmitted?
+    - Transmission of Gray Light?
+    - What are the modes of transmission for Gray Light?
+
+- intent: gray_light_environmental_factors
+  examples: |
+    - What environmental factors favor the development of Gray Light?
+    - Factors influencing Gray Light growth?
+    - Environmental conditions conducive to Gray Light?
+
+- intent: gray_light_treatment
+  examples: |
+    - Is there a cure for Gray Light?
+    - Treatment options for Gray Light?
+    - How to treat Gray Light?
+
+- intent: white_spot_explanation
+  examples: |
+    - What is [White Spot](disease)?
+    - Can you explain [White Spot](disease)?
+    - Define [White Spot](disease).
+    - What does [White Spot](disease) mean?    
+    
+- intent: white_spot_treatment
+  examples: |
+    - Is there a cure for [White Spot](disease)?
+    - Treatment options for [White Spot](disease)?
+    - How to treat [White Spot](disease)?
+
+- intent: white_spot_symptoms
+  examples: |
+    - What are the symptoms of White Spot disease?
+    - How to identify White Spot on tea leaves?
+    - Signs of White Spot infection?
+
+- intent: white_spot_management
+  examples: |
+    - How to manage White Spot disease in tea plantations?
+    - Control measures for White Spot disease?
+    - Strategies to prevent White Spot outbreaks?
+
+- intent: red_leaf_spot_explanation
+  examples: |
+    - What is Red Leaf Spot disease?
+    - Can you explain Red Leaf Spot?
+    - Define Red Leaf Spot.
+    - What causes Red Leaf Spot?
+    - How does Red Leaf Spot affect tea plants?
+
+- intent: red_leaf_spot_treatment
+  examples: |
+    - How to treat Red Leaf Spot?
+    - Is there a cure for Red Leaf Spot?
+    - Treatment options for Red Leaf Spot?
+    - What are the remedies for Red Leaf Spot?
+
+
+- intent: red_leaf_spot_symptoms
+  examples: |
+    - What are the symptoms of Red Leaf Spot disease?
+    - How to recognize Red Leaf Spot on tea leaves?
+    - Signs of Red Leaf Spot infection?
+
+- intent: red_leaf_spot_management
+  examples: |
+    - How to manage Red Leaf Spot disease in tea plantations?
+    - Control measures for Red Leaf Spot disease?
+    - Strategies to prevent Red Leaf Spot outbreaks?
+
+- intent: anthracnose_causes
+  examples: |
+    - What causes Anthracnose in tea plants?
+    - Factors leading to Anthracnose infection?
+    - What contributes to the development of Anthracnose?
+
+- intent: algal_leaf_causes
+  examples: |
+    - What causes Algal Leaf disease in tea leaves?
+    - Factors leading to Algal Leaf infection?
+    - What contributes to the development of Algal Leaf?
+
+- intent: bird_eye_spot_causes
+  examples: |
+    - What causes Bird Eye Spot disease in tea leaves?
+    - Factors leading to Bird Eye Spot infection?
+    - What contributes to the development of Bird Eye Spot?
+
+- intent: brown_blight_causes
+  examples: |
+    - What causes Brown Blight disease in tea plants?
+    - Factors leading to Brown Blight infection?
+    - What contributes to the development of Brown Blight?
+
+- intent: gray_light_causes
+  examples: |
+    - What causes Gray Light disease in tea leaves?
+    - Factors leading to Gray Light infection?
+    - What contributes to the development of Gray Light?
+
+- intent: white_spot_causes
+  examples: |
+    - What causes White Spot disease in tea leaves?
+    - Factors leading to White Spot infection?
+    - What contributes to the development of White Spot?
+
+- intent: red_leaf_spot_causes
+  examples: |
+    - What causes Red Leaf Spot disease in tea plants?
+    - Factors leading to Red Leaf Spot infection?
+    - What contributes to the development of Red Leaf Spot?
+
+- intent: anthracnose_distribution
+  examples: |
+    - Where is Anthracnose commonly found?
+    - Geographic distribution of Anthracnose?
+    - Regions affected by Anthracnose?
+
+- intent: algal_leaf_distribution
+  examples: |
+    - Where is Algal Leaf disease commonly found?
+    - Geographic distribution of Algal Leaf?
+    - Regions affected by Algal Leaf?
+
+- intent: bird_eye_spot_distribution
+  examples: |
+    - Where is Bird Eye Spot disease commonly found?
+    - Geographic distribution of Bird Eye Spot?
+    - Regions affected by Bird Eye Spot?
+
+- intent: brown_blight_distribution
+  examples: |
+    - Where is Brown Blight disease commonly found?
+    - Geographic distribution of Brown Blight?
+    - Regions affected by Brown Blight?
+
+- intent: gray_light_distribution
+  examples: |
+    - Where is Gray Light disease commonly found?
+    - Geographic distribution of Gray Light?
+    - Regions affected by Gray Light?
+
+- intent: white_spot_distribution
+  examples: |
+    - Where is White Spot disease commonly found?
+    - Geographic distribution of White Spot?
+    - Regions affected by White Spot?
+
+- intent: red_leaf_spot_distribution
+  examples: |
+    - Where is Red Leaf Spot disease commonly found?
+    - Geographic distribution of Red Leaf Spot?
+    - Regions affected by Red Leaf Spot?
+
+- intent: anthracnose_prevention
+  examples: |
+    - How to prevent Anthracnose in tea plantations?
+    - Prevention strategies for Anthracnose?
+    - How to avoid Anthracnose outbreaks?
+
+- intent: algal_leaf_prevention
+  examples: |
+    - How to prevent Algal Leaf disease in tea leaves?
+    - Prevention strategies for Algal Leaf?
+    - How to avoid Algal Leaf outbreaks?
+
+- intent: bird_eye_spot_prevention
+  examples: |
+    - How to prevent Bird Eye Spot disease in tea leaves?
+    - Prevention strategies for Bird Eye Spot?
+    - How to avoid Bird Eye Spot outbreaks?
+
+- intent: brown_blight_prevention
+  examples: |
+    - How to prevent Brown Blight disease in tea plants?
+    - Prevention strategies for Brown Blight?
+    - How to avoid Brown Blight outbreaks?
+
+- intent: gray_light_prevention
+  examples: |
+    - How to prevent Gray Light disease in tea leaves?
+    - Prevention strategies for Gray Light?
+    - How to avoid Gray Light outbreaks?
+
+- intent: white_spot_prevention
+  examples: |
+    - How to prevent White Spot disease in tea leaves?
+    - Prevention strategies for White Spot?
+    - How to avoid White Spot outbreaks?
+
+- intent: red_leaf_spot_prevention
+  examples: |
+    - How to prevent Red Leaf Spot disease in tea plants?
+    - Prevention strategies for Red Leaf Spot?
+    - How to avoid Red Leaf Spot outbreaks?
+
+- intent: anthracnose_spread_prevention
+  examples: |
+    - How to prevent the spread of Anthracnose in tea plantations?
+    - Preventing the spread of Anthracnose?
+    - Measures to control the spread of Anthracnose?
+
+- intent: algal_leaf_spread_prevention
+  examples: |
+    - How to prevent the spread of Algal Leaf disease in tea leaves?
+    - Preventing the spread of Algal Leaf?
+    - Measures to control the spread of Algal Leaf?
+
+- intent: bird_eye_spot_spread_prevention
+  examples: |
+    - How to prevent the spread of Bird Eye Spot disease in tea leaves?
+    - Preventing the spread of Bird Eye Spot?
+    - Measures to control the spread of Bird Eye Spot?
+
+- intent: brown_blight_spread_prevention
+  examples: |
+    - How to prevent the spread of Brown Blight disease in tea plants?
+    - Preventing the spread of Brown Blight?
+    - Measures to control the spread of Brown Blight?
+
+- intent: gray_light_spread_prevention
+  examples: |
+    - How to prevent the spread of Gray Light disease in tea leaves?
+    - Preventing the spread of Gray Light?
+    - Measures to control the spread of Gray Light?
+
+- intent: white_spot_spread_prevention
+  examples: |
+    - How to prevent the spread of White Spot disease in tea leaves?
+    - Preventing the spread of White Spot?
+    - Measures to control the spread of White Spot?
+
+- intent: red_leaf_spot_spread_prevention
+  examples: |
+    - How to prevent the spread of Red Leaf Spot disease in tea plants?
+    - Preventing the spread of Red Leaf Spot?
+    - Measures to control the spread of Red Leaf Spot?
+
+- intent: anthracnose_symptoms_additional
+  examples: |
+    - What are some additional symptoms of Anthracnose?
+    - Are there any other signs of Anthracnose infection?
+    - Can you provide more details on Anthracnose symptoms?
+
+- intent: anthracnose_occurrence_reasons
+  examples: |
+    - What are the reasons behind Anthracnose occurrence?
+    - Why does Anthracnose occur in tea plants?
+    - What factors contribute to the development of Anthracnose?
+
+- intent: anthracnose_remedies
+  examples: |
+    - How to treat Anthracnose in tea plants?
+    - Remedies for Anthracnose infection?
+    - Effective treatments for Anthracnose?
+
+- intent: algal_leaf_symptoms_additional
+  examples: |
+    - What are some additional symptoms of Algal Leaf disease?
+    - Are there any other signs of Algal Leaf infection?
+    - Can you provide more details on Algal Leaf symptoms?
+
+- intent: algal_leaf_occurrence_reasons
+  examples: |
+    - What are the reasons behind Algal Leaf occurrence?
+    - Why does Algal Leaf occur in tea leaves?
+    - What factors contribute to the development of Algal Leaf?
+
+- intent: algal_leaf_remedies
+  examples: |
+    - How to treat Algal Leaf disease in tea leaves?
+    - Remedies for Algal Leaf infection?
+    - Effective treatments for Algal Leaf?
+
+- intent: bird_eye_spot_symptoms_additional
+  examples: |
+    - What are some additional symptoms of Bird Eye Spot disease?
+    - Are there any other signs of Bird Eye Spot infection?
+    - Can you provide more details on Bird Eye Spot symptoms?
+
+- intent: bird_eye_spot_occurrence_reasons
+  examples: |
+    - What are the reasons behind Bird Eye Spot occurrence?
+    - Why does Bird Eye Spot occur in tea leaves?
+    - What factors contribute to the development of Bird Eye Spot?
+
+- intent: bird_eye_spot_remedies
+  examples: |
+    - How to treat Bird Eye Spot disease in tea leaves?
+    - Remedies for Bird Eye Spot infection?
+    - Effective treatments for Bird Eye Spot?
+
+- intent: brown_blight_symptoms_additional
+  examples: |
+    - What are some additional symptoms of Brown Blight disease?
+    - Are there any other signs of Brown Blight infection?
+    - Can you provide more details on Brown Blight symptoms?
+
+- intent: brown_blight_occurrence_reasons
+  examples: |
+    - What are the reasons behind Brown Blight occurrence?
+    - Why does Brown Blight occur in tea plants?
+    - What factors contribute to the development of Brown Blight?
+
+- intent: brown_blight_remedies
+  examples: |
+    - How to treat Brown Blight disease in tea plants?
+    - Remedies for Brown Blight infection?
+    - Effective treatments for Brown Blight?
+
+- intent: gray_light_symptoms_additional
+  examples: |
+    - What are some additional symptoms of Gray Light disease?
+    - Are there any other signs of Gray Light infection?
+    - Can you provide more details on Gray Light symptoms?
+
+- intent: gray_light_occurrence_reasons
+  examples: |
+    - What are the reasons behind Gray Light occurrence?
+    - Why does Gray Light occur in tea leaves?
+    - What factors contribute to the development of Gray Light?
+
+- intent: gray_light_remedies
+  examples: |
+    - How to treat Gray Light disease in tea leaves?
+    - Remedies for Gray Light infection?
+    - Effective treatments for Gray Light?
+
+- intent: white_spot_symptoms_additional
+  examples: |
+    - What are some additional symptoms of White Spot disease?
+    - Are there any other signs of White Spot infection?
+    - Can you provide more details on White Spot symptoms?
+
+- intent: white_spot_occurrence_reasons
+  examples: |
+    - What are the reasons behind White Spot occurrence?
+    - Why does White Spot occur in tea leaves?
+    - What factors contribute to the development of White Spot?
+
+- intent: white_spot_remedies
+  examples: |
+    - How to treat White Spot disease in tea leaves?
+    - Remedies for White Spot infection?
+    - Effective treatments for White Spot?
+
+- intent: red_leaf_spot_symptoms_additional
+  examples: |
+    - What are some additional symptoms of Red Leaf Spot disease?
+    - Are there any other signs of Red Leaf Spot infection?
+    - Can you provide more details on Red Leaf Spot symptoms?
+
+- intent: red_leaf_spot_occurrence_reasons
+  examples: |
+    - What are the reasons behind Red Leaf Spot occurrence?
+    - Why does Red Leaf Spot occur in tea plants?
+    - What factors contribute to the development of Red Leaf Spot?
+
+- intent: red_leaf_spot_remedies
+  examples: |
+    - How to treat Red Leaf Spot disease in tea plants?
+    - Remedies for Red Leaf Spot infection?
+    - Effective treatments for Red Leaf Spot?
+
+- intent: explain_tea_mosquito_bug
+  examples: |
+    - What is the tea mosquito bug?
+    - Can you explain the tea mosquito bug?
+    - Tell me about Helopeltis spp.
+
+- intent: tea_mosquito_bug_impact
+  examples: |
+    - How does the tea mosquito bug affect tea plants?
+    - What is the impact of Helopeltis spp. on tea cultivation?
+    - Impact of tea mosquito bug?
+
+- intent: tea_mosquito_bug_management
+  examples: |
+    - How to manage tea mosquito bug infestations?
+    - What are the strategies for controlling Helopeltis spp.?
+    - How to treat tea mosquito bug?  
+
+- intent: explain_red_spider_mite
+  examples: |
+    - What are red spider mites?
+    - Can you explain Oligonychus coffeae?
+    - Tell me about the red spider mite.
+
+- intent: red_spider_mite_impact
+  examples: |
+    - How do red spider mites affect tea plants?
+    - What is the impact of Oligonychus coffeae on tea cultivation?
+    - Impact of red spider mites?
+
+- intent: red_spider_mite_management
+  examples: |
+    - How to manage red spider mite infestations?
+    - What are the strategies for controlling Oligonychus coffeae?
+    - How to treat red spider mites?  
+
+- intent: explain_tea_green_leafhopper
+  examples: |
+    - What is the tea green leafhopper?
+    - Can you explain Empoasca spp.?
+    - Tell me about the tea green leafhopper.
+
+- intent: tea_green_leafhopper_impact
+  examples: |
+    - How does the tea green leafhopper affect tea plants?
+    - What is the impact of Empoasca spp. on tea cultivation?
+    - Impact of tea green leaf hoppers?
+
+- intent: tea_green_leafhopper_management
+  examples: |
+    - How to manage tea green leafhopper infestations?
+    - What are the strategies for controlling Empoasca spp.?
+    - How to treat tea green leaf hoppers?
+
+- intent: blister_blight_explanation
+  examples: |
+    - What is blister blight?
+    - Can you explain blister blight?
+    - Tell me about blister blight.
+
+- intent: blister_blight_symptoms
+  examples: |
+    - What are the symptoms of blister blight?
+    - How can I identify blister blight symptoms?
+    - What signs indicate blister blight?
+
+- intent: blister_blight_treatment
+  examples: |
+    - How can blister blight be treated?
+    - Are there any remedies for blister blight?
+    - What treatments are effective against blister blight?
+    - Remedy for blister blight?
+
+- intent: twig_die_back_explanation
+  examples: |
+    - What is twig die back?
+    - Can you explain twig die back?
+    - Tell me about twig die back.
+
+- intent: twig_die_back_symptoms
+  examples: |
+    - What are the symptoms of twig die back?
+    - How do I recognize twig die back symptoms?
+    - What signs indicate twig die back?
+
+- intent: twig_die_back_treatment
+  examples: |
+    - How can twig die back be treated?
+    - Are there any remedies for twig die back?
+    - What treatments are effective against twig die back?
+    - Remedy for twig die back?
+
+- intent: brown_root_rot_explanation
+  examples: |
+    - What is brown root rot disease?
+    - Can you explain brown root rot to me?
+    - How does brown root rot affect plants?
+
+- intent: brown_root_rot_symptoms
+  examples: |
+    - What are the symptoms of brown root rot?
+    - How do I identify brown root rot symptoms?
+    - What signs indicate brown root rot?
+    - Symptoms of brown root rot?
+
+- intent: brown_root_rot_treatment
+  examples: |
+    - How can brown root rot be treated?
+    - Are there any remedies for brown root rot?
+    - What treatments are effective against brown root rot?
+    - Brown root rot remedy[treatment]?
+
+- intent: brown_root_rot_occurrence_reason
+  examples: |
+    - What are the reasons for the occurrence of brown root rot?
+    - Why does brown root rot happen?
+    - What factors contribute to brown root rot?
+
+- intent: red_root_rot_explanation
+  examples: |
+    - What is red root rot disease?
+    - Can you explain red root rot to me?
+    - How does red root rot affect plants?
+
+- intent: red_root_rot_symptoms
+  examples: |
+    - What are the symptoms of red root rot?
+    - How do I identify red root rot symptoms?
+    - What signs indicate red root rot?
+    - Symptoms of red root rot?
+
+- intent: red_root_rot_treatment
+  examples: |
+    - How can red root rot be treated?
+    - Are there any remedies for red root rot?
+    - What treatments are effective against red root rot?
+    - Red root rot remedy[treatment]?
+
+- intent: red_root_rot_occurrence_reason
+  examples: |
+    - What are the reasons for the occurrence of red root rot?
+    - Why does red root rot happen?
+    - What factors contribute to red root rot?
+
+- intent: frost_damage_explanation
+  examples: |
+    - What is Frost Damage?
+    - Can you explain Frost Damage?
+    - Define Frost Damage.
+    - What does Frost Damage mean?
+
+- intent: frost_damage_symptoms
+  examples: |
+    - What are the symptoms of Frost Damage?
+    - How to identify Frost Damage?
+    - What are the signs of Frost Damage?
+    - Symptoms of Frost Damage?
+
+- intent: frost_damage_treatment
+  examples: |
+    - Is there a cure for Frost Damage?
+    - Treatment (options) for Frost Damage?
+    - How to treat Frost Damage?
+    - (Any) remedies for Frost Damage?
+
+- intent: frost_damage_occurrence_reason
+  examples: |
+    - What causes Frost Damage?
+    - Causes of Frost Damage?
+    - What leads to Frost Damage?
+    - Why does Frost Damage occur?
+
+- intent: tea_wilt_disease_explanation
+  examples: |
+    - What is Tea Wilt Disease?
+    - Can you explain Tea Wilt Disease?
+    - Define Tea Wilt Disease.
+    - What does Tea Wilt Disease mean?
+
+- intent: tea_wilt_disease_symptoms
+  examples: |
+    - What are the symptoms of Tea Wilt Disease?
+    - How to identify Tea Wilt Disease?
+    - What are the signs of Tea Wilt Disease?
+    - Symptoms of Tea Wilt Disease?
+
+- intent: tea_wilt_disease_treatment
+  examples: |
+    - Is there a cure for Tea Wilt Disease?
+    - Treatment (options) for Tea Wilt Disease?
+    - How to treat Tea Wilt Disease?
+    - (Any) remedies for Tea Wilt Disease?
+
+- intent: tea_wilt_disease_occurrence_reason
+  examples: |
+    - What causes Tea Wilt Disease?
+    - Causes of Tea Wilt Disease?
+    - What leads to Tea Wilt Disease?
+    - Why does Tea Wilt Disease occur?
+
+- intent: nlu_fallback
+  examples: |
+    - gibberish
+    - gay

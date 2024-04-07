@@ -1,0 +1,580 @@
+version: "3.1"
+
+rules:
+
+- rule: Respond to greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Respond to thank_you
+  steps:
+  - intent: thank_you
+  - action: utter_thank_you
+
+- rule: Respond to goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Respond to what_can_you_do
+  steps:
+  - intent: what_can_you_do
+  - action: utter_what_can_you_do
+
+- rule: Respond to how_can_you_help
+  steps:
+  - intent: how_can_you_help
+  - action: utter_how_can_you_help
+
+- rule: Respond to offer_additional_information
+  steps:
+  - intent: offer_additional_information
+  - action: utter_offer_additional_information
+
+- rule: Respond to help_confusion
+  steps:
+  - intent: help_confusion
+  - action: utter_help_confusion
+
+- rule: Respond to explain_anthracnose
+  steps:
+  - intent: explain_anthracnose
+  - action: utter_explain_anthracnose
+
+- rule: Respond to anthracnose_symptoms
+  steps:
+  - intent: anthracnose_symptoms
+  - action: utter_anthracnose_symptoms
+
+- rule: Respond to anthracnose_management
+  steps:
+  - intent: anthracnose_management
+  - action: utter_anthracnose_management
+
+- rule: Respond to explain_algal_leaf
+  steps:
+  - intent: explain_algal_leaf
+  - action: utter_explain_algal_leaf
+
+- rule: Respond to algal_leaf_symptoms
+  steps:
+  - intent: algal_leaf_symptoms
+  - action: utter_algal_leaf_symptoms
+
+- rule: Respond to algal_leaf_management
+  steps:
+  - intent: algal_leaf_management
+  - action: utter_algal_leaf_management
+
+- rule: Respond to explain_bird_eye_spot
+  steps:
+  - intent: explain_bird_eye_spot
+  - action: utter_explain_bird_eye_spot
+
+- rule: Respond to bird_eye_spot_symptoms
+  steps:
+  - intent: bird_eye_spot_symptoms
+  - action: utter_bird_eye_spot_symptoms
+
+- rule: Respond to bird_eye_spot_management
+  steps:
+  - intent: bird_eye_spot_management
+  - action: utter_bird_eye_spot_management
+
+- rule: Respond to explain_brown_blight
+  steps:
+  - intent: explain_brown_blight
+  - action: utter_explain_brown_blight
+
+- rule: Respond to brown_blight_symptoms
+  steps:
+  - intent: brown_blight_symptoms
+  - action: utter_brown_blight_symptoms
+
+- rule: Respond to brown_blight_management
+  steps:
+  - intent: brown_blight_management
+  - action: utter_brown_blight_management
+
+- rule: Respond to gray_light_explanation
+  steps:
+  - intent: gray_light_explanation
+  - action: utter_explain_gray_light
+
+- rule: Respond to gray_light_symptoms
+  steps:
+  - intent: gray_light_symptoms
+  - action: utter_gray_light_symptoms
+
+- rule: Respond to gray_light_management
+  steps:
+  - intent: gray_light_management
+  - action: utter_gray_light_management
+
+- rule: Respond to gray_light_transmission
+  steps:
+  - intent: gray_light_transmission
+  - action: utter_gray_light_transmission
+
+- rule: Respond to gray_light_environmental_factors
+  steps:
+  - intent: gray_light_environmental_factors
+  - action: utter_gray_light_environmental_factors
+
+- rule: Respond to gray_light_treatment
+  steps:
+  - intent: gray_light_treatment
+  - action: utter_gray_light_treatment
+
+- rule: Respond to white spot explanation
+  steps:
+    - intent: white_spot_explanation
+    - action: utter_explain_white_spot
+
+- rule: Respond to white spot treatment
+  steps:
+    - intent: white_spot_treatment
+    - action: utter_white_spot_treatment
+
+- rule: Respond to white_spot_symptoms
+  steps:
+  - intent: white_spot_symptoms
+  - action: utter_white_spot_symptoms
+
+- rule: Respond to white_spot_management
+  steps:
+  - intent: white_spot_management
+  - action: utter_white_spot_management
+
+- rule: Respond to red_leaf_spot_explanation
+  steps:
+  - intent: red_leaf_spot_explanation
+  - action: utter_red_leaf_spot_explanation
+
+- rule: Respond to red_leaf_spot_treatment
+  steps:
+  - intent: red_leaf_spot_treatment
+  - action: utter_red_leaf_spot_treatment
+
+- rule: Respond to red_leaf_spot_symptoms
+  steps:
+  - intent: red_leaf_spot_symptoms
+  - action: utter_red_leaf_spot_symptoms
+
+- rule: Respond to red_leaf_spot_management
+  steps:
+  - intent: red_leaf_spot_management
+  - action: utter_red_leaf_spot_management
+
+
+
+- rule: Respond to anthracnose_causes
+  steps:
+  - intent: anthracnose_causes
+  - action: utter_anthracnose_causes
+
+- rule: Respond to algal_leaf_causes
+  steps:
+  - intent: algal_leaf_causes
+  - action: utter_algal_leaf_causes
+
+- rule: Respond to bird_eye_spot_causes
+  steps:
+  - intent: bird_eye_spot_causes
+  - action: utter_bird_eye_spot_causes
+
+- rule: Respond to brown_blight_causes
+  steps:
+  - intent: brown_blight_causes
+  - action: utter_brown_blight_causes
+
+- rule: Respond to gray_light_causes
+  steps:
+  - intent: gray_light_causes
+  - action: utter_gray_light_causes
+
+- rule: Respond to white_spot_causes
+  steps:
+  - intent: white_spot_causes
+  - action: utter_white_spot_causes
+
+- rule: Respond to red_leaf_spot_causes
+  steps:
+  - intent: red_leaf_spot_causes
+  - action: utter_red_leaf_spot_causes
+
+- rule: Respond to anthracnose_distribution
+  steps:
+  - intent: anthracnose_distribution
+  - action: utter_anthracnose_distribution
+
+- rule: Respond to algal_leaf_distribution
+  steps:
+  - intent: algal_leaf_distribution
+  - action: utter_algal_leaf_distribution
+
+- rule: Respond to bird_eye_spot_distribution
+  steps:
+  - intent: bird_eye_spot_distribution
+  - action: utter_bird_eye_spot_distribution
+
+- rule: Respond to brown_blight_distribution
+  steps:
+  - intent: brown_blight_distribution
+  - action: utter_brown_blight_distribution
+
+- rule: Respond to gray_light_distribution
+  steps:
+  - intent: gray_light_distribution
+  - action: utter_gray_light_distribution
+
+- rule: Respond to white_spot_distribution
+  steps:
+  - intent: white_spot_distribution
+  - action: utter_white_spot_distribution
+
+- rule: Respond to red_leaf_spot_distribution
+  steps:
+  - intent: red_leaf_spot_distribution
+  - action: utter_red_leaf_spot_distribution
+
+- rule: Respond to anthracnose_prevention
+  steps:
+  - intent: anthracnose_prevention
+  - action: utter_anthracnose_prevention
+
+- rule: Respond to algal_leaf_prevention
+  steps:
+  - intent: algal_leaf_prevention
+  - action: utter_algal_leaf_prevention
+
+- rule: Respond to bird_eye_spot_prevention
+  steps:
+  - intent: bird_eye_spot_prevention
+  - action: utter_bird_eye_spot_prevention
+
+- rule: Respond to brown_blight_prevention
+  steps:
+  - intent: brown_blight_prevention
+  - action: utter_brown_blight_prevention
+
+- rule: Respond to gray_light_prevention
+  steps:
+  - intent: gray_light_prevention
+  - action: utter_gray_light_prevention
+
+- rule: Respond to white_spot_prevention
+  steps:
+  - intent: white_spot_prevention
+  - action: utter_white_spot_prevention
+
+- rule: Respond to red_leaf_spot_prevention
+  steps:
+  - intent: red_leaf_spot_prevention
+  - action: utter_red_leaf_spot_prevention
+
+- rule: Respond to anthracnose_spread_prevention
+  steps:
+  - intent: anthracnose_spread_prevention
+  - action: utter_anthracnose_spread_prevention
+
+- rule: Respond to algal_leaf_spread_prevention
+  steps:
+  - intent: algal_leaf_spread_prevention
+  - action: utter_algal_leaf_spread_prevention
+
+- rule: Respond to bird_eye_spot_spread_prevention
+  steps:
+  - intent: bird_eye_spot_spread_prevention
+  - action: utter_bird_eye_spot_spread_prevention
+
+- rule: Respond to brown_blight_spread_prevention
+  steps:
+  - intent: brown_blight_spread_prevention
+  - action: utter_brown_blight_spread_prevention
+
+- rule: Respond to gray_light_spread_prevention
+  steps:
+  - intent: gray_light_spread_prevention
+  - action: utter_gray_light_spread_prevention
+
+- rule: Respond to white_spot_spread_prevention
+  steps:
+  - intent: white_spot_spread_prevention
+  - action: utter_white_spot_spread_prevention
+
+- rule: Respond to red_leaf_spot_spread_prevention
+  steps:
+  - intent: red_leaf_spot_spread_prevention
+  - action: utter_red_leaf_spot_spread_prevention
+
+- rule: Respond to anthracnose_symptoms_additional
+  steps:
+  - intent: anthracnose_symptoms_additional
+  - action: utter_anthracnose_symptoms_additional
+
+- rule: Respond to anthracnose_occurrence_reasons
+  steps:
+  - intent: anthracnose_occurrence_reasons
+  - action: utter_anthracnose_occurrence_reasons
+
+- rule: Respond to anthracnose_remedies
+  steps:
+  - intent: anthracnose_remedies
+  - action: utter_anthracnose_remedies
+
+- rule: Respond to algal_leaf_symptoms_additional
+  steps:
+  - intent: algal_leaf_symptoms_additional
+  - action: utter_algal_leaf_symptoms_additional
+
+- rule: Respond to algal_leaf_occurrence_reasons
+  steps:
+  - intent: algal_leaf_occurrence_reasons
+  - action: utter_algal_leaf_occurrence_reasons
+
+- rule: Respond to algal_leaf_remedies
+  steps:
+  - intent: algal_leaf_remedies
+  - action: utter_algal_leaf_remedies
+
+- rule: Respond to bird_eye_spot_symptoms_additional
+  steps:
+  - intent: bird_eye_spot_symptoms_additional
+  - action: utter_bird_eye_spot_symptoms_additional
+
+- rule: Respond to bird_eye_spot_occurrence_reasons
+  steps:
+  - intent: bird_eye_spot_occurrence_reasons
+  - action: utter_bird_eye_spot_occurrence_reasons
+
+- rule: Respond to bird_eye_spot_remedies
+  steps:
+  - intent: bird_eye_spot_remedies
+  - action: utter_bird_eye_spot_remedies
+
+- rule: Respond to brown_blight_symptoms_additional
+  steps:
+  - intent: brown_blight_symptoms_additional
+  - action: utter_brown_blight_symptoms_additional
+
+- rule: Respond to brown_blight_occurrence_reasons
+  steps:
+  - intent: brown_blight_occurrence_reasons
+  - action: utter_brown_blight_occurrence_reasons
+
+- rule: Respond to brown_blight_remedies
+  steps:
+  - intent: brown_blight_remedies
+  - action: utter_brown_blight_remedies
+
+- rule: Respond to gray_light_symptoms_additional
+  steps:
+  - intent: gray_light_symptoms_additional
+  - action: utter_gray_light_symptoms_additional
+
+- rule: Respond to gray_light_occurrence_reasons
+  steps:
+  - intent: gray_light_occurrence_reasons
+  - action: utter_gray_light_occurrence_reasons
+
+- rule: Respond to gray_light_remedies
+  steps:
+  - intent: gray_light_remedies
+  - action: utter_gray_light_remedies
+
+- rule: Respond to white_spot_symptoms_additional
+  steps:
+  - intent: white_spot_symptoms_additional
+  - action: utter_white_spot_symptoms_additional
+
+- rule: Respond to white_spot_occurrence_reasons
+  steps:
+  - intent: white_spot_occurrence_reasons
+  - action: utter_white_spot_occurrence_reasons
+
+- rule: Respond to white_spot_remedies
+  steps:
+  - intent: white_spot_remedies
+  - action: utter_white_spot_remedies
+
+- rule: Respond to red_leaf_spot_symptoms_additional
+  steps:
+  - intent: red_leaf_spot_symptoms_additional
+  - action: utter_red_leaf_spot_symptoms_additional
+
+- rule: Respond to red_leaf_spot_occurrence_reasons
+  steps:
+  - intent: red_leaf_spot_occurrence_reasons
+  - action: utter_red_leaf_spot_occurrence_reasons
+
+- rule: Respond to red_leaf_spot_remedies
+  steps:
+  - intent: red_leaf_spot_remedies
+  - action: utter_red_leaf_spot_remedies
+
+- rule: Respond to explain_tea_mosquito_bug
+  steps:
+  - intent: explain_tea_mosquito_bug
+  - action: utter_explain_tea_mosquito_bug
+
+- rule: Respond to tea_mosquito_bug_impact
+  steps:
+  - intent: tea_mosquito_bug_impact
+  - action: utter_tea_mosquito_bug_impact
+
+- rule: Respond to tea_mosquito_bug_management
+  steps:
+  - intent: tea_mosquito_bug_management
+  - action: utter_tea_mosquito_bug_management
+
+- rule: Respond to explain_red_spider_mite
+  steps:
+  - intent: explain_red_spider_mite
+  - action: utter_explain_red_spider_mite
+
+- rule: Respond to red_spider_mite_impact
+  steps:
+  - intent: red_spider_mite_impact
+  - action: utter_red_spider_mite_impact
+
+- rule: Respond to red_spider_mite_management
+  steps:
+  - intent: red_spider_mite_management
+  - action: utter_red_spider_mite_management
+
+- rule: Respond to explain_tea_green_leafhopper
+  steps:
+  - intent: explain_tea_green_leafhopper
+  - action: utter_explain_tea_green_leafhopper
+
+- rule: Respond to tea_green_leafhopper_impact
+  steps:
+  - intent: tea_green_leafhopper_impact
+  - action: utter_tea_green_leafhopper_impact
+
+- rule: Respond to tea_green_leafhopper_management
+  steps:
+  - intent: tea_green_leafhopper_management
+  - action: utter_tea_green_leafhopper_management
+
+- rule: Respond to blister blight explanation
+  steps:
+  - intent: blister_blight_explanation
+  - action: utter_explain_blister_blight
+
+- rule: Respond to blister blight symptoms
+  steps:
+  - intent: blister_blight_symptoms
+  - action: utter_blister_blight_symptoms
+
+- rule: Respond to blister blight treatment
+  steps:
+  - intent: blister_blight_treatment
+  - action: utter_blister_blight_treatment
+
+- rule: Respond to twig die back explanation
+  steps:
+  - intent: twig_die_back_explanation
+  - action: utter_explain_twig_die_back
+
+- rule: Respond to twig die back symptoms
+  steps:
+  - intent: twig_die_back_symptoms
+  - action: utter_twig_die_back_symptoms
+
+- rule: Respond to twig die back treatment
+  steps:
+  - intent: twig_die_back_treatment
+  - action: utter_twig_die_back_treatment
+
+- rule: Respond to brown root rot explanation
+  steps:
+  - intent: brown_root_rot_explanation
+  - action: utter_explain_brown_root_rot
+
+- rule: Respond to brown root rot symptoms
+  steps:
+  - intent: brown_root_rot_symptoms
+  - action: utter_brown_root_rot_symptoms
+
+- rule: Respond to brown root rot treatment
+  steps:
+  - intent: brown_root_rot_treatment
+  - action: utter_brown_root_rot_treatment
+
+- rule: Respond to brown root rot occurrence reason
+  steps:
+  - intent: brown_root_rot_occurrence_reason
+  - action: utter_brown_root_rot_occurrence_reason
+
+- rule: Respond to red root rot explanation
+  steps:
+  - intent: red_root_rot_explanation
+  - action: utter_red_root_rot_explanation
+
+- rule: Respond to red root rot symptoms
+  steps:
+  - intent: red_root_rot_symptoms
+  - action: utter_red_root_rot_symptoms
+
+- rule: Respond to red root rot treatment
+  steps:
+  - intent: red_root_rot_treatment
+  - action: utter_red_root_rot_treatment
+
+- rule: Respond to red root rot occurrence reason
+  steps:
+  - intent: red_root_rot_occurrence_reason
+  - action: utter_red_root_rot_occurrence_reason
+
+- rule: Respond to frost_damage_explanation
+  steps:
+  - intent: frost_damage_explanation
+  - action: utter_frost_damage_explanation
+
+- rule: Respond to frost_damage_symptoms
+  steps:
+  - intent: frost_damage_symptoms
+  - action: utter_frost_damage_symptoms
+
+- rule: Respond to frost_damage_treatment
+  steps:
+  - intent: frost_damage_treatment
+  - action: utter_frost_damage_treatment
+
+- rule: Respond to frost_damage_occurrence_reason
+  steps:
+  - intent: frost_damage_occurrence_reason
+  - action: utter_frost_damage_occurrence_reason
+
+- rule: Respond to tea_wilt_disease_explanation
+  steps:
+  - intent: tea_wilt_disease_explanation
+  - action: utter_tea_wilt_disease_explanation
+
+- rule: Respond to tea_wilt_disease_symptoms
+  steps:
+  - intent: tea_wilt_disease_symptoms
+  - action: utter_tea_wilt_disease_symptoms
+
+- rule: Respond to tea_wilt_disease_treatment
+  steps:
+  - intent: tea_wilt_disease_treatment
+  - action: utter_tea_wilt_disease_treatment
+
+- rule: Respond to tea_wilt_disease_occurrence_reason
+  steps:
+  - intent: tea_wilt_disease_occurrence_reason
+  - action: utter_tea_wilt_disease_occurrence_reason
+
+- rule: Respond to nlu_fallback
+  steps:
+  - intent: nlu_fallback
+  - action: utter_nlu_fallback
+
+- rule: Respond to bot_challenge
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
