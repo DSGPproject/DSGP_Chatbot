@@ -1,0 +1,739 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - thank_you
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - what_can_you_do
+  - how_can_you_help
+  - offer_additional_information
+  - help_confusion
+  - explain_anthracnose
+  - anthracnose_symptoms
+  - anthracnose_management
+  - explain_algal_leaf
+  - algal_leaf_symptoms
+  - algal_leaf_management
+  - explain_bird_eye_spot
+  - bird_eye_spot_symptoms
+  - bird_eye_spot_management
+  - explain_brown_blight
+  - brown_blight_symptoms
+  - brown_blight_management
+  - gray_light_explanation
+  - gray_light_transmission
+  - gray_light_environmental_factors
+  - gray_light_treatment
+  - gray_light_symptoms
+  - gray_light_management
+  - white_spot_explanation
+  - white_spot_treatment
+  - white_spot_symptoms
+  - white_spot_management
+  - red_leaf_spot_explanation
+  - red_leaf_spot_treatment
+  - red_leaf_spot_symptoms
+  - red_leaf_spot_management
+  - anthracnose_causes
+  - algal_leaf_causes
+  - bird_eye_spot_causes
+  - brown_blight_causes
+  - gray_light_causes
+  - white_spot_causes
+  - red_leaf_spot_causes
+  - anthracnose_distribution
+  - algal_leaf_distribution
+  - bird_eye_spot_distribution
+  - brown_blight_distribution
+  - gray_light_distribution
+  - white_spot_distribution
+  - red_leaf_spot_distribution
+  - anthracnose_prevention
+  - algal_leaf_prevention
+  - bird_eye_spot_prevention
+  - brown_blight_prevention
+  - gray_light_prevention
+  - white_spot_prevention
+  - red_leaf_spot_prevention
+  - anthracnose_spread_prevention
+  - algal_leaf_spread_prevention
+  - bird_eye_spot_spread_prevention
+  - brown_blight_spread_prevention
+  - gray_light_spread_prevention
+  - white_spot_spread_prevention
+  - red_leaf_spot_spread_prevention
+  - anthracnose_symptoms_additional
+  - anthracnose_occurrence_reasons
+  - anthracnose_remedies
+  - algal_leaf_symptoms_additional
+  - algal_leaf_occurrence_reasons
+  - algal_leaf_remedies
+  - bird_eye_spot_symptoms_additional
+  - bird_eye_spot_occurrence_reasons
+  - bird_eye_spot_remedies
+  - brown_blight_symptoms_additional
+  - brown_blight_occurrence_reasons
+  - brown_blight_remedies
+  - gray_light_symptoms_additional
+  - gray_light_occurrence_reasons
+  - gray_light_remedies
+  - white_spot_symptoms_additional
+  - white_spot_occurrence_reasons
+  - white_spot_remedies
+  - red_leaf_spot_symptoms_additional
+  - red_leaf_spot_occurrence_reasons
+  - red_leaf_spot_remedies
+  - explain_tea_mosquito_bug
+  - tea_mosquito_bug_impact
+  - tea_mosquito_bug_management
+  - explain_red_spider_mite
+  - red_spider_mite_impact
+  - red_spider_mite_management
+  - explain_tea_green_leafhopper
+  - tea_green_leafhopper_impact
+  - tea_green_leafhopper_management
+  - blister_blight_explanation
+  - blister_blight_symptoms
+  - blister_blight_treatment
+  - twig_die_back_explanation
+  - twig_die_back_symptoms
+  - twig_die_back_treatment
+  - brown_root_rot_explanation
+  - brown_root_rot_symptoms
+  - brown_root_rot_treatment
+  - brown_root_rot_occurrence_reason
+  - red_root_rot_explanation
+  - red_root_rot_symptoms
+  - red_root_rot_treatment
+  - red_root_rot_occurrence_reason
+  - frost_damage_explanation
+  - frost_damage_symptoms
+  - frost_damage_treatment
+  - frost_damage_occurrence_reason
+  - tea_wilt_disease_explanation
+  - tea_wilt_disease_symptoms
+  - tea_wilt_disease_treatment
+  - tea_wilt_disease_occurrence_reason
+  - bot_challenge
+  - nlu_fallback
+
+entities:
+  - disease
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+  - text: "Hello! How can I assist you today?"
+  - text: "Hi there! What can I help you with?"
+  - text: "Welcome! How can I be of service?"
+
+  utter_thank_you:
+  - text: "You're welcome!"
+  - text: "No problem, happy to help!"
+  - text: "Glad I could assist you!"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+  - text: "Goodbye! Have a great day!"
+  - text: "See you later!"
+  - text: "Farewell! Take care."
+
+  utter_what_can_you_do:
+  - text: "I can help you with a variety of tasks, including providing information about tea leaf diseases, offering recommendations for preventive measures and management strategies, and answering any questions you may have about tea cultivation and health. Feel free to ask me anything related to these topics!"
+
+  utter_how_can_you_help:
+  - text: "I'm here to assist you with information about tea leaf diseases, provide guidance on preventive measures and management techniques, and answer any questions you may have about tea cultivation and health. If you need help with anything specific, feel free to ask!"
+
+  utter_offer_additional_information:
+  - text: "Certainly! Here are some additional resources you might find helpful:\n- 
+  [Resource 1](https://vikaspedia.in/agriculture/crop-production/integrated-pest-managment/ipm-for-commercial-crops/ipm-strategies-for-tea/tea-diseases)\n- 
+  [Resource 2](https://plantvillage.psu.edu/topics/tea/infos)\n- 
+  [Resource 3](https://plantvillage.psu.edu/topics/tea/infos)\nFeel free to explore these resources, and let me know if you have any further questions!"
+
+  utter_help_confusion:
+  - text: "Do you need any additional resources that might help:\n-
+  [Resource 1](https://vikaspedia.in/agriculture/crop-production/integrated-pest-managment/ipm-for-commercial-crops/ipm-strategies-for-tea/tea-diseases)\n- 
+  [Resource 2](https://plantvillage.psu.edu/topics/tea/infos)\n- 
+  [Resource 3](https://plantvillage.psu.edu/topics/tea/infos)\nFeel free to explore these resources, and let me know if you have any further questions!"
+
+  utter_explain_anthracnose:
+  - text: "Anthracnose is a fungal disease that affects plants, including tea. It causes dark lesions on leaves, stems, and fruits, leading to reduced yield and quality."
+
+  utter_anthracnose_symptoms:
+  - text: "Symptoms of Anthracnose disease may include wilting, dark lesions on leaves, and sunken spots on fruits."
+  - text: "Common symptoms of Anthracnose include dark lesions on leaves, wilting, and sunken spots on fruits."
+  - text: "Signs of Anthracnose infection can be wilting, dark lesions on leaves, and sunken spots on fruits."
+
+  utter_anthracnose_management:
+  - text: "To manage Anthracnose disease, you can prune infected parts, apply fungicides, and maintain proper plant hygiene."
+  - text: "Control measures for Anthracnose include pruning affected parts, applying fungicides, and ensuring good plant hygiene."
+  - text: "Strategies to prevent Anthracnose outbreaks involve pruning, fungicide application, and maintaining plant cleanliness."
+
+  utter_explain_algal_leaf:
+  - text: "Algal Leaf is a condition caused by the growth of algae on tea leaves. It results in green or yellowish discoloration of leaves and affects tea quality."
+
+  utter_algal_leaf_symptoms:
+  - text: "Symptoms of Algal Leaf disease include yellow-green patches on leaves, leaf curling, and stunted growth."
+  - text: "Common symptoms of Algal Leaf disease are yellow-green patches on leaves, leaf curling, and stunted growth."
+  - text: "Signs of Algal Leaf infection may include yellow-green patches on leaves, leaf curling, and stunted growth."
+
+  utter_algal_leaf_management:
+  - text: "Managing Algal Leaf disease involves improving drainage, reducing leaf wetness, and applying copper-based fungicides."
+  - text: "Control measures for Algal Leaf disease include improving drainage, minimizing leaf wetness, and using copper-based fungicides."
+  - text: "Strategies to prevent Algal Leaf outbreaks include drainage improvement, minimizing leaf wetness, and fungicide application."
+
+  utter_explain_bird_eye_spot:
+  - text: "Bird Eye Spot is a fungal disease that manifests as circular spots with a dark border and a light gray center on tea leaves."
+
+  utter_bird_eye_spot_symptoms:
+  - text: "Symptoms of Bird Eye Spot disease include circular lesions with dark borders on leaves and fruits."
+  - text: "Common symptoms of Bird Eye Spot disease are circular lesions with dark borders on leaves and fruits."
+  - text: "Signs of Bird Eye Spot infection can be circular lesions with dark borders on leaves and fruits."
+
+  utter_bird_eye_spot_management:
+  - text: "To manage Bird Eye Spot disease, you can remove infected plant parts, apply fungicides, and maintain proper air circulation."
+  - text: "Control measures for Bird Eye Spot disease include pruning infected parts, using fungicides, and improving air circulation."
+  - text: "Strategies to prevent Bird Eye Spot outbreaks involve removing infected parts, fungicide application, and enhancing air circulation."
+
+  utter_explain_brown_blight:
+  - text: "Brown Blight is a fungal disease commonly found in tea plants, characterized by brown lesions on leaves and stems."
+
+  utter_brown_blight_symptoms:
+  - text: "Symptoms of Brown Blight disease include brown lesions on leaves, leaf wilting, and premature leaf drop."
+  - text: "Common symptoms of Brown Blight disease are brown lesions on leaves, wilting, and premature leaf drop."
+  - text: "Signs of Brown Blight infection may include brown lesions on leaves, leaf wilting, and premature leaf drop."
+
+  utter_brown_blight_management:
+  - text: "Managing Brown Blight disease involves pruning affected parts, applying fungicides, and improving air circulation."
+  - text: "Control measures for Brown Blight disease include pruning, fungicide application, and enhancing air circulation."
+  - text: "Strategies to prevent Brown Blight outbreaks include pruning, fungicide use, and enhancing air circulation."
+
+  utter_explain_gray_light:
+  - text: "Gray Light is a fungal disease affecting tea plants, characterized by grayish patches on leaves and stems."
+
+  utter_gray_light_transmission:
+  - text: "Gray Light can be transmitted through spores carried by wind or rain splash, as well as through contaminated tools and equipment."
+
+  utter_gray_light_environmental_factors:
+  - text: "Environmental factors such as high humidity, prolonged leaf wetness, and poor air circulation contribute to the development of Gray Light."
+
+  utter_gray_light_treatment:
+  - text: "Treatment options for Gray Light include the use of fungicides, cultural practices to reduce moisture, and removal of infected plant material."
+
+  utter_gray_light_symptoms:
+  - text: "Symptoms of Gray Light disease include grayish powdery growth on leaves, leaf distortion, and reduced plant vigor."
+  - text: "Common symptoms of Gray Light disease are grayish powdery growth on leaves, leaf distortion, and reduced vigor."
+  - text: "Signs of Gray Light infection can be grayish powdery growth on leaves, leaf distortion, and reduced plant vigor."
+
+  utter_gray_light_management:
+  - text: "To manage Gray Light disease, you can prune affected parts, improve air circulation, and apply sulfur-based fungicides."
+  - text: "Control measures for Gray Light disease include pruning, enhancing air circulation, and using sulfur-based fungicides."
+  - text: "Strategies to prevent Gray Light outbreaks involve pruning, improving air circulation, and using sulfur-based fungicides."
+
+  utter_explain_white_spot:
+  - text: "White Spot is a fungal disease that affects tea plants, causing small, round spots on the leaves, which eventually turn white or grayish. It is caused by the fungus *Botrytis cinerea*."
+
+  utter_white_spot_treatment:
+  - text: "Treatment options for White Spot include the application of fungicides to infected plants. It's important to use fungicides labeled for tea plants and to follow the manufacturer's instructions carefully."
+
+  utter_white_spot_symptoms:
+  - text: "Symptoms of White Spot disease include white spots on leaves, leaf yellowing, and reduced plant growth."
+  - text: "Common symptoms of White Spot disease are white spots on leaves, leaf yellowing, and reduced growth."
+  - text: "Signs of White Spot infection may include white spots on leaves, leaf yellowing, and reduced plant growth."
+
+  utter_white_spot_management:
+  - text: "Managing White Spot disease involves removing infected parts, improving air circulation, and applying fungicides."
+  - text: "Control measures for White Spot disease include removing infected parts, enhancing air circulation, and fungicide application."
+  - text: "Strategies to prevent White Spot outbreaks involve removing infected parts, improving air circulation, and using fungicides."
+
+  utter_red_leaf_spot_explanation:
+  - text: "Red Leaf Spot, also known as Cercospora Leaf Spot, is a fungal disease commonly affecting various plants, including tea plants. It is caused by fungi belonging to the Cercospora genus, particularly Cercospora coffeicola and Cercospora theae. This disease is characterized by the appearance of small, circular to irregularly shaped spots on the leaves, which may start as yellow or brown lesions and develop red or purple margins as they mature. The fungi responsible for Red Leaf Spot thrive in warm and humid conditions, making tea plantations in such climates particularly susceptible to this disease. Red Leaf Spot can spread rapidly under favorable environmental conditions, leading to widespread damage to tea leaves if left unchecked."
+
+  utter_red_leaf_spot_treatment:
+  - text: "Management of Red Leaf Spot involves several strategies, including cultural practices and chemical control methods. Pruning of infected leaves, maintaining good plant hygiene by removing fallen leaves, and ensuring proper spacing between plants to improve air circulation can help reduce the spread of the disease. Fungicides may also be used to control severe outbreaks, but their effectiveness can vary depending on the fungal strain and environmental conditions. Preventive measures for Red Leaf Spot include implementing crop rotation, avoiding overhead irrigation, and planting disease-resistant tea varieties where possible. Regular monitoring of tea plantations for early signs of infection and prompt action to control outbreaks can help minimize the impact of Red Leaf Spot on tea production."
+
+  utter_red_leaf_spot_symptoms:
+  - text: "Symptoms of Red Leaf Spot disease include red or purple lesions on leaves, leaf discoloration, and leaf drop."
+  - text: "Common symptoms of Red Leaf Spot disease are red or purple lesions on leaves, leaf discoloration, and leaf drop."
+  - text: "Signs of Red Leaf Spot infection can be red or purple lesions on leaves, leaf discoloration, and leaf drop."
+
+  utter_red_leaf_spot_management:
+  - text: "To manage Red Leaf Spot disease, you can prune affected parts, apply fungicides, and improve plant nutrition."
+  - text: "Control measures for Red Leaf Spot disease include pruning, fungicide application, and enhancing plant nutrition."
+  - text: "Strategies to prevent Red Leaf Spot outbreaks involve pruning, fungicide use, and improving plant nutrition."
+
+  utter_anthracnose_causes:
+  - text: "Anthracnose in tea plants is caused by fungal pathogens, particularly Colletotrichum spp., favored by warm and humid conditions."
+  - text: "The main causes of Anthracnose in tea plants are fungal pathogens, especially Colletotrichum spp., thriving in warm and humid environments."
+  - text: "Anthracnose is primarily caused by fungal pathogens, such as Colletotrichum spp., which thrive in warm and humid climates."
+
+  utter_algal_leaf_causes:
+  - text: "Algal Leaf disease in tea leaves is caused by algal pathogens, which proliferate in moist conditions and poor plant hygiene."
+  - text: "The causes of Algal Leaf disease in tea leaves are algal pathogens, thriving in moist environments and due to poor plant hygiene."
+  - text: "Algal Leaf disease in tea leaves is caused by algal pathogens, favored by moist conditions and inadequate plant hygiene."
+
+  utter_bird_eye_spot_causes:
+  - text: "Bird Eye Spot disease in tea leaves is caused by fungal pathogens, particularly Mycena citricolor, favored by high humidity and leaf wetness."
+  - text: "The main causes of Bird Eye Spot disease in tea leaves are fungal pathogens, especially Mycena citricolor, thriving in high humidity and leaf wetness."
+  - text: "Bird Eye Spot disease in tea leaves is primarily caused by fungal pathogens, such as Mycena citricolor, which prefer high humidity and leaf wetness."
+
+  utter_brown_blight_causes:
+  - text: "Brown Blight disease in tea plants is caused by fungal pathogens, such as Pestalotiopsis spp., favored by warm and wet conditions."
+  - text: "The causes of Brown Blight disease in tea plants are fungal pathogens, particularly Pestalotiopsis spp., thriving in warm and wet environments."
+  - text: "Brown Blight disease in tea plants is caused by fungal pathogens, like Pestalotiopsis spp., which thrive in warm and wet climates."
+
+  utter_gray_light_causes:
+  - text: "Gray Light disease in tea leaves is caused by fungal pathogens, especially Botrytis spp., favored by high humidity and poor air circulation."
+  - text: "The main causes of Gray Light disease in tea leaves are fungal pathogens, particularly Botrytis spp., thriving in high humidity and with inadequate air circulation."
+  - text: "Gray Light disease in tea leaves is primarily caused by fungal pathogens, like Botrytis spp., which prefer high humidity and poor air circulation."
+
+  utter_white_spot_causes:
+  - text: "White Spot disease in tea leaves is caused by fungal pathogens, such as Phyllosticta spp., favored by humid conditions and poor plant hygiene."
+  - text: "The causes of White Spot disease in tea leaves are fungal pathogens, especially Phyllosticta spp., thriving in humid environments and due to inadequate plant hygiene."
+  - text: "White Spot disease in tea leaves is caused by fungal pathogens, like Phyllosticta spp., which prefer humid conditions and inadequate plant hygiene."
+
+  utter_red_leaf_spot_causes:
+  - text: "Red Leaf Spot disease in tea plants is caused by fungal pathogens, particularly Cercospora spp., favored by warm and moist conditions."
+  - text: "The main causes of Red Leaf Spot disease in tea plants are fungal pathogens, especially Cercospora spp., thriving in warm and moist environments."
+  - text: "Red Leaf Spot disease in tea plants is caused by fungal pathogens, like Cercospora spp., which thrive in warm and moist climates."
+
+  utter_anthracnose_distribution:
+  - text: "Anthracnose disease is commonly found in tea-growing regions with warm and humid climates, such as parts of Asia, Africa, and South America."
+  - text: "The distribution of Anthracnose disease spans tea-growing regions with warm and humid conditions, including areas in Asia, Africa, and South America."
+  - text: "Anthracnose disease is prevalent in tea-growing areas characterized by warm and humid environments, notably in regions across Asia, Africa, and South America."
+
+  utter_algal_leaf_distribution:
+  - text: "Algal Leaf disease is commonly found in tea-growing regions with high moisture levels, such as subtropical and tropical areas around the world."
+  - text: "The distribution of Algal Leaf disease includes tea-growing regions with high humidity and moisture levels, notably in subtropical and tropical areas globally."
+  - text: "Algal Leaf disease occurs frequently in tea-growing areas characterized by high moisture content, particularly in subtropical and tropical regions worldwide."
+
+  utter_bird_eye_spot_distribution:
+  - text: "Bird Eye Spot disease is commonly found in tea-growing regions with high humidity and frequent rainfall, such as parts of Asia, Africa, and South America."
+  - text: "The distribution of Bird Eye Spot disease covers tea-growing regions with high humidity and rainfall, including areas in Asia, Africa, and South America."
+  - text: "Bird Eye Spot disease is prevalent in tea-growing areas characterized by high humidity and rainfall, notably in regions across Asia, Africa, and South America."
+
+  utter_brown_blight_distribution:
+  - text: "Brown Blight disease is commonly found in tea plantations with warm and wet climates, such as regions in Asia, Africa, and South America."
+  - text: "The distribution of Brown Blight disease includes tea plantations with warm and wet conditions, notably in regions across Asia, Africa, and South America."
+  - text: "Brown Blight disease occurs frequently in tea plantations characterized by warm and wet environments, particularly in regions across Asia, Africa, and South America."
+
+  utter_gray_light_distribution:
+  - text: "Gray Light disease is distributed widely in tea-growing regions with high humidity and poor air circulation, such as parts of Asia, Africa, and South America."
+  - text: "The distribution of Gray Light disease includes tea-growing regions with high humidity and inadequate air circulation, notably in areas across Asia, Africa, and South America."
+  - text: "Gray Light disease is commonly found in tea-growing areas characterized by high humidity and poor air circulation, particularly in regions across Asia, Africa, and South America."
+
+  utter_white_spot_distribution:
+  - text: "White Spot disease is distributed widely in tea-growing regions with high humidity and poor plant hygiene, such as parts of Asia, Africa, and South America."
+  - text: "The distribution of White Spot disease spans tea-growing regions with high humidity and inadequate plant hygiene, notably in areas across Asia, Africa, and South America."
+  - text: "White Spot disease is commonly found in tea-growing areas characterized by high humidity and poor plant hygiene, particularly in regions across Asia, Africa, and South America."
+
+  utter_red_leaf_spot_distribution:
+  - text: "Red Leaf Spot disease is distributed widely in tea-growing regions with warm and moist climates, such as parts of Asia, Africa, and South America."
+  - text: "The distribution of Red Leaf Spot disease includes tea-growing regions with warm and moist conditions, notably in areas across Asia, Africa, and South America."
+  - text: "Red Leaf Spot disease is commonly found in tea-growing areas characterized by warm and moist environments, particularly in regions across Asia, Africa, and South America."
+
+  utter_anthracnose_prevention:
+  - text: "Preventing Anthracnose in tea plantations involves maintaining proper sanitation, pruning infected leaves, and applying fungicides during conducive weather conditions."
+  - text: "To prevent Anthracnose in tea plants, it's essential to ensure good sanitation practices, remove infected plant material, and apply fungicides as needed, especially during periods of high humidity."
+  - text: "Anthracnose prevention in tea plantations includes practicing good hygiene, removing diseased leaves, and applying fungicides when environmental conditions are favorable for disease development."
+
+  utter_algal_leaf_prevention:
+  - text: "Preventing Algal Leaf disease in tea leaves requires improving drainage, reducing leaf wetness, and enhancing air circulation within the plantation."
+  - text: "To prevent Algal Leaf disease in tea leaves, it's important to address drainage issues, minimize leaf wetness, and improve air movement in the plantation."
+  - text: "Algal Leaf disease prevention in tea leaves involves addressing drainage problems, reducing moisture on leaves, and enhancing airflow throughout the plantation."
+
+  utter_bird_eye_spot_prevention:
+  - text: "Preventing Bird Eye Spot disease in tea leaves involves maintaining proper plant spacing, ensuring good air circulation, and applying fungicides preventively."
+  - text: "To prevent Bird Eye Spot disease in tea leaves, it's essential to space plants adequately, promote air movement, and use fungicides preventively, especially during periods of high disease pressure."
+  - text: "Bird Eye Spot disease prevention in tea leaves includes proper plant spacing, optimizing air circulation, and applying fungicides preventively when necessary."
+
+  utter_brown_blight_prevention:
+  - text: "Preventing Brown Blight disease in tea plants requires implementing cultural practices like proper pruning, reducing plant stress, and applying fungicides as a preventive measure."
+  - text: "To prevent Brown Blight disease in tea plants, it's important to practice proper pruning, minimize plant stress, and use fungicides preventively, especially during favorable disease conditions."
+  - text: "Brown Blight disease prevention in tea plants involves cultural practices such as effective pruning, stress reduction, and preventive fungicide applications."
+
+  utter_gray_light_prevention:
+  - text: "Preventing Gray Light disease in tea leaves involves improving air circulation, minimizing leaf wetness, and applying fungicides as a preventive measure."
+  - text: "To prevent Gray Light disease in tea leaves, it's crucial to enhance air movement, reduce moisture on leaves, and use fungicides preventively, particularly during conditions conducive to disease development."
+  - text: "Gray Light disease prevention in tea leaves includes enhancing airflow, minimizing leaf moisture, and using fungicides preventively as needed."
+
+  utter_white_spot_prevention:
+  - text: "Preventing White Spot disease in tea leaves requires maintaining proper plant hygiene, minimizing leaf wetness, and applying fungicides preventively."
+  - text: "To prevent White Spot disease in tea leaves, it's essential to practice good plant hygiene, reduce leaf moisture, and use fungicides preventively, especially during periods of high disease risk."
+  - text: "White Spot disease prevention in tea leaves involves ensuring good plant hygiene, minimizing moisture on leaves, and using fungicides preventively when necessary."
+
+  utter_red_leaf_spot_prevention:
+  - text: "Preventing Red Leaf Spot disease in tea plants involves proper sanitation, pruning of infected leaves, and applying fungicides preventively during favorable disease conditions."
+  - text: "To prevent Red Leaf Spot disease in tea plants, it's important to maintain good sanitation, remove infected leaves, and use fungicides preventively, particularly when environmental conditions favor disease development."
+  - text: "Red Leaf Spot disease prevention in tea plants includes sanitation practices, removal of infected foliage, and preventive fungicide applications during conducive weather conditions."
+
+  utter_anthracnose_spread_prevention:
+  - text: "Preventing the spread of Anthracnose in tea plantations requires early detection, removal of infected plant material, and proper disposal to minimize disease transmission."
+  - text: "To prevent the spread of Anthracnose in tea plantations, it's essential to detect infections early, remove infected material, and dispose of it properly to reduce disease dissemination."
+  - text: "Anthracnose spread prevention in tea plantations involves early detection of infections, elimination of infected material, and appropriate disposal methods to minimize disease spread."
+
+  utter_algal_leaf_spread_prevention:
+  - text: "Preventing the spread of Algal Leaf disease in tea leaves involves removing and destroying infected plant material, improving drainage, and implementing preventive fungicide applications."
+  - text: "To prevent the spread of Algal Leaf disease in tea leaves, it's important to remove and destroy infected material, address drainage issues, and use fungicides preventively to limit disease spread."
+  - text: "Algal Leaf disease spread prevention in tea leaves includes removing infected tissue, enhancing drainage, and applying fungicides preventively as needed."
+
+  utter_bird_eye_spot_spread_prevention:
+  - text: "Preventing the spread of Bird Eye Spot disease in tea leaves requires early detection, removal of infected foliage, and application of fungicides to minimize disease dissemination."
+  - text: "To prevent the spread of Bird Eye Spot disease in tea leaves, it's crucial to detect infections early, remove infected foliage, and apply fungicides to limit disease spread."
+  - text: "Bird Eye Spot disease spread prevention in tea leaves involves early detection of infections, removal of infected tissue, and fungicide applications to minimize disease transmission."
+
+  utter_brown_blight_spread_prevention:
+  - text: "Preventing the spread of Brown Blight disease in tea plants involves maintaining proper plant spacing, minimizing leaf wetness, and applying fungicides to limit disease dissemination."
+  - text: "To prevent the spread of Brown Blight disease in tea plants, it's important to ensure proper plant spacing, reduce leaf moisture, and use fungicides to minimize disease spread."
+  - text: "Brown Blight disease spread prevention in tea plants includes optimizing plant spacing, minimizing moisture on leaves, and applying fungicides as needed to limit disease transmission."
+
+  utter_gray_light_spread_prevention:
+  - text: "Preventing the spread of Gray Light disease in tea leaves involves improving air circulation, reducing leaf wetness, and applying fungicides to minimize disease dissemination."
+  - text: "To prevent the spread of Gray Light disease in tea leaves, it's essential to enhance air movement, minimize moisture on leaves, and use fungicides to limit disease spread."
+  - text: "Gray Light disease spread prevention in tea leaves includes enhancing airflow, minimizing leaf moisture, and applying fungicides preventively as needed."
+
+  utter_white_spot_spread_prevention:
+  - text: "Preventing the spread of White Spot disease in tea leaves requires maintaining proper plant hygiene, minimizing leaf wetness, and applying fungicides to limit disease dissemination."
+  - text: "To prevent the spread of White Spot disease in tea leaves, it's crucial to practice good plant hygiene, reduce leaf moisture, and use fungicides to minimize disease spread."
+  - text: "White Spot disease spread prevention in tea leaves involves ensuring good plant hygiene, minimizing moisture on leaves, and applying fungicides preventively as needed."
+
+  utter_red_leaf_spot_spread_prevention:
+  - text: "Preventing the spread of Red Leaf Spot disease in tea plants involves early detection, removal of infected leaves, and application of fungicides to limit disease dissemination."
+  - text: "To prevent the spread of Red Leaf Spot disease in tea plants, it's important to detect infections early, remove infected leaves, and apply fungicides to minimize disease spread."
+  - text: "Red Leaf Spot disease spread prevention in tea plants includes early detection of infections, removal of infected foliage, and fungicide applications to limit disease transmission."
+
+  utter_anthracnose_symptoms_additional:
+  - text: "In addition to leaf lesions, Anthracnose symptoms may include stem cankers, dieback of branches, and premature defoliation in severe cases."
+  - text: "Anthracnose symptoms can also manifest as stem cankers, branch dieback, and early leaf drop, especially under severe infection conditions."
+  - text: "Additional symptoms of Anthracnose may involve stem lesions, branch dieback, and early leaf shedding, particularly when the infection is severe."
+
+  utter_anthracnose_occurrence_reasons:
+  - text: "Anthracnose occurrence is favored by warm and humid conditions, poor air circulation, and prolonged leaf wetness, which create an ideal environment for fungal growth."
+  - text: "The occurrence of Anthracnose is influenced by factors such as warm and humid weather, inadequate air movement, and prolonged moisture on leaves, providing favorable conditions for fungal development."
+  - text: "Anthracnose tends to occur in regions with warm and humid climates, where poor air circulation and prolonged leaf wetness contribute to the development of the disease."
+
+  utter_anthracnose_remedies:
+  - text: "Remedies for Anthracnose include pruning infected plant parts, promoting air circulation, applying fungicides preventively, and maintaining proper plant hygiene."
+  - text: "To address Anthracnose, it's important to prune affected areas, improve air movement around plants, use fungicides preventively, and ensure good sanitation practices."
+  - text: "Anthracnose can be managed by removing infected plant material, enhancing airflow in the plantation, applying fungicides preventively, and practicing good plant hygiene."
+
+  utter_algal_leaf_symptoms_additional:
+  - text: "In addition to leaf discoloration, Algal Leaf symptoms may include oily or greasy patches on the leaf surface, which can become slimy when wet."
+  - text: "Algal Leaf symptoms may also include the presence of oily or greasy patches on the leaf surface, which can develop a slimy texture under wet conditions."
+  - text: "Additional symptoms of Algal Leaf disease may involve oily or greasy patches on the leaf surface, particularly when the foliage is wet."
+
+  utter_algal_leaf_occurrence_reasons:
+  - text: "Algal Leaf disease occurs in tea plantations with poor drainage, excessive shade, and prolonged leaf wetness, providing optimal conditions for algal growth."
+  - text: "The occurrence of Algal Leaf disease is linked to factors such as inadequate drainage, excessive shading, and prolonged moisture on leaves, creating favorable conditions for algal development."
+  - text: "Algal Leaf disease is more likely to occur in tea plantations with poor drainage, excessive shade, and prolonged leaf moisture, which promote the growth of algae."
+
+  utter_algal_leaf_remedies:
+  - text: "To remedy Algal Leaf disease, improve drainage in the plantation, reduce shading, avoid overhead irrigation, and apply appropriate fungicides."
+  - text: "Addressing Algal Leaf disease involves improving drainage, minimizing shading, avoiding overhead watering, and using fungicides as needed."
+  - text: "Algal Leaf disease can be managed by enhancing drainage, reducing shading, avoiding overhead irrigation, and applying fungicides judiciously."
+
+  utter_bird_eye_spot_symptoms_additional:
+  - text: "In addition to leaf lesions, Bird Eye Spot symptoms may include brown or black necrotic spots surrounded by a yellow halo, giving the appearance of bird's eyes."
+  - text: "Bird Eye Spot symptoms may also manifest as necrotic spots with a yellow halo, resembling bird's eyes, in addition to leaf lesions."
+  - text: "Additional symptoms of Bird Eye Spot disease may involve the formation of necrotic spots with yellow halos, resembling bird's eyes, alongside typical leaf lesions."
+
+  utter_bird_eye_spot_occurrence_reasons:
+  - text: "Bird Eye Spot disease occurs in tea plantations with high humidity, poor air circulation, and frequent rainfall, which create favorable conditions for fungal growth."
+  - text: "The occurrence of Bird Eye Spot disease is favored by factors such as high humidity, inadequate air movement, and frequent rain showers, providing conducive conditions for disease development."
+  - text: "Bird Eye Spot disease is more likely to occur in tea plantations characterized by high humidity, limited air circulation, and frequent rainfall, promoting fungal proliferation."
+
+  utter_bird_eye_spot_remedies:
+  - text: "To remedy Bird Eye Spot disease, prune infected leaves, promote air circulation, apply fungicides preventively, and avoid overhead irrigation."
+  - text: "Addressing Bird Eye Spot disease involves removing infected foliage, improving air movement around plants, using fungicides preventively, and refraining from overhead watering."
+  - text: "Bird Eye Spot disease can be managed by pruning infected leaves, enhancing airflow in the plantation, applying fungicides as a preventive measure, and minimizing overhead irrigation."
+
+  utter_brown_blight_symptoms_additional:
+  - text: "In addition to leaf lesions, Brown Blight symptoms may include wilting of shoots, dieback of branches, and reduced leaf size and number."
+  - text: "Brown Blight symptoms may also manifest as shoot wilting, branch dieback, and decreased leaf size and density, in addition to typical leaf lesions."
+  - text: "Additional symptoms of Brown Blight disease may involve shoot wilting, branch dieback, and decreased leaf size and abundance, alongside characteristic leaf lesions."
+
+  utter_brown_blight_occurrence_reasons:
+  - text: "Brown Blight disease occurs in tea plantations with high temperatures, excessive humidity, poor air circulation, and waterlogged soil conditions, which favor fungal growth."
+  - text: "The occurrence of Brown Blight disease is linked to factors such as high temperatures, excessive humidity, inadequate air movement, and waterlogged soils, providing optimal conditions for disease development."
+  - text: "Brown Blight disease tends to occur in tea plantations with elevated temperatures, high humidity levels, limited air circulation, and water-saturated soils, creating favorable conditions for fungal proliferation."
+
+  utter_brown_blight_remedies:
+  - text: "To remedy Brown Blight disease, prune infected branches, improve air circulation, apply fungicides preventively, and avoid overwatering."
+  - text: "Addressing Brown Blight disease involves removing infected branches, enhancing airflow around plants, using fungicides preventively, and practicing careful irrigation."
+  - text: "Brown Blight disease can be managed by pruning infected branches, promoting air movement in the plantation, applying fungicides as needed, and avoiding excessive watering."
+
+  utter_gray_light_symptoms_additional:
+  - text: "In addition to leaf lesions, Gray Light symptoms may include wilting of shoots, stunting of growth, and brown discoloration of vascular tissues."
+  - text: "Gray Light symptoms may also manifest as shoot wilting, growth stunting, and browning of vascular tissues, alongside typical leaf lesions."
+  - text: "Additional symptoms of Gray Light disease may involve shoot wilting, growth inhibition, and discoloration of vascular tissues, in addition to characteristic leaf lesions."
+
+  utter_gray_light_occurrence_reasons:
+  - text: "Gray Light disease occurs in tea plantations with high humidity, poor air circulation, and waterlogged soil conditions, particularly during periods of prolonged rainfall."
+  - text: "The occurrence of Gray Light disease is favored by factors such as elevated humidity, limited air movement, and waterlogged soils, especially during extended rainy periods."
+  - text: "Gray Light disease tends to occur in tea plantations with excessive humidity, inadequate air circulation, and water-saturated soils, especially during prolonged rainy spells."
+
+  utter_gray_light_remedies:
+  - text: "To remedy Gray Light disease, prune infected branches, improve air circulation, apply fungicides preventively, and maintain proper drainage."
+  - text: "Addressing Gray Light disease involves removing infected branches, enhancing airflow in the plantation, using fungicides preventively, and ensuring good drainage."
+  - text: "Gray Light disease can be managed by pruning infected branches, promoting air movement around plants, applying fungicides preventively, and addressing drainage issues."
+
+  utter_white_spot_symptoms_additional:
+  - text: "In addition to leaf lesions, White Spot symptoms may include yellowing of surrounding tissue, leaf distortion, and premature leaf drop."
+  - text: "White Spot symptoms may also manifest as yellowing of adjacent tissue, leaf deformation, and early leaf shedding, alongside typical lesions."
+  - text: "Additional symptoms of White Spot disease may involve yellowing of surrounding tissue, leaf distortion, and premature defoliation, in addition to characteristic lesions."
+
+  utter_white_spot_occurrence_reasons:
+  - text: "White Spot disease occurs in tea plantations with high humidity, poor air circulation, and prolonged leaf wetness, providing favorable conditions for fungal growth."
+  - text: "The occurrence of White Spot disease is influenced by factors such as elevated humidity, limited air movement, and extended leaf moisture, creating conducive conditions for disease development."
+  - text: "White Spot disease tends to occur in tea plantations characterized by high humidity levels, inadequate air circulation, and prolonged leaf wetness, promoting fungal proliferation."
+
+  utter_white_spot_remedies:
+  - text: "To remedy White Spot disease, prune infected foliage, improve air circulation, apply fungicides preventively, and avoid overhead irrigation."
+  - text: "Addressing White Spot disease involves removing infected leaves, enhancing airflow around plants, using fungicides preventively, and refraining from overhead watering."
+  - text: "White Spot disease can be managed by pruning infected foliage, promoting air movement in the plantation, applying fungicides preventively, and minimizing overhead irrigation."
+
+  utter_red_leaf_spot_symptoms_additional:
+  - text: "In addition to leaf lesions, Red Leaf Spot symptoms may include yellowing of surrounding tissue, leaf distortion, and premature leaf drop."
+  - text: "Red Leaf Spot symptoms may also manifest as yellowing of adjacent tissue, leaf deformation, and early leaf shedding, alongside typical lesions."
+  - text: "Additional symptoms of Red Leaf Spot disease may involve yellowing of surrounding tissue, leaf distortion, and premature defoliation, in addition to characteristic lesions."
+
+  utter_red_leaf_spot_occurrence_reasons:
+  - text: "Red Leaf Spot disease occurs in tea plantations with high humidity, poor air circulation, and prolonged leaf wetness, providing favorable conditions for fungal growth."
+  - text: "The occurrence of Red Leaf Spot disease is influenced by factors such as elevated humidity, limited air movement, and extended leaf moisture, creating conducive conditions for disease development."
+  - text: "Red Leaf Spot disease tends to occur in tea plantations characterized by high humidity levels, inadequate air circulation, and prolonged leaf wetness, promoting fungal proliferation."
+
+  utter_red_leaf_spot_remedies:
+  - text: "To remedy Red Leaf Spot disease, prune infected foliage, improve air circulation, apply fungicides preventively, and avoid overhead irrigation."
+  - text: "Addressing Red Leaf Spot disease involves removing infected leaves, enhancing airflow around plants, using fungicides preventively, and refraining from overhead watering."
+  - text: "Red Leaf Spot disease can be managed by pruning infected foliage, promoting air movement in the plantation, applying fungicides preventively, and minimizing overhead irrigation."
+
+  utter_explain_tea_mosquito_bug:
+  - text: "The tea mosquito bug, also known as Helopeltis spp., is a common pest in tea plantations. It feeds on young tea shoots and leaves, causing damage and reducing yield. It can be managed through cultural practices and, if necessary, chemical control measures."
+
+  utter_tea_mosquito_bug_impact:
+  - text: "Tea mosquito bugs can have a significant impact on tea cultivation. Their feeding activities can result in damage to tea shoots and leaves, leading to reduced yield and quality of tea leaves."
+
+  utter_tea_mosquito_bug_management:
+  - text: "To manage tea mosquito bug infestations, it's important to regularly monitor tea plantations for signs of infestation. Cultural practices such as pruning, weed control, and maintaining proper plant health can help reduce susceptibility to infestations. In severe cases, chemical control measures may be necessary."
+
+  utter_explain_red_spider_mite:
+  - text: "The red spider mite, scientifically known as Oligonychus coffeae, is a common pest of tea plants. It feeds on the undersides of tea leaves, causing stippling and discoloration. Severe infestations can lead to defoliation and reduced photosynthesis."
+
+  utter_red_spider_mite_impact:
+  - text: "Red spider mites can have a detrimental impact on tea plants. Their feeding activities can weaken the plants, reduce growth, and cause leaf damage, ultimately affecting the yield and quality of tea leaves."
+
+  utter_red_spider_mite_management:
+  - text: "Management of red spider mite infestations involves cultural, biological, and chemical control methods. These may include regular monitoring, pruning of infested plant parts, introducing natural predators, and applying suitable acaricides."
+
+  utter_explain_tea_green_leafhopper:
+  - text: "The tea green leafhopper, also known as Empoasca spp., is a sap-sucking insect that feeds on the phloem sap of tea plants. It can cause damage by piercing the leaf tissue and extracting nutrients, leading to leaf discoloration and reduced photosynthesis."
+
+  utter_tea_green_leafhopper_impact:
+  - text: "Tea green leafhoppers can negatively impact tea plants by causing leaf damage, reducing photosynthetic efficiency, and potentially transmitting plant diseases. Severe infestations can lead to reduced growth and yield of tea leaves."
+
+  utter_tea_green_leafhopper_management:
+  - text: "Management of tea green leafhopper infestations involves cultural practices such as pruning, sanitation, and maintaining plant vigor. Additionally, biological control agents and selective insecticides can be used to control leafhopper populations."
+
+  utter_explain_blister_blight:
+  - text: "Blister blight is a common fungal disease affecting tea plants, caused by the pathogen Exobasidium vexans. It results in the formation of blisters on the surface of tea leaves, affecting their quality and yield."
+
+  utter_blister_blight_symptoms:
+  - text: "Symptoms of blister blight include the formation of blister-like lesions on the surface of tea leaves, which may turn brown or black as the disease progresses. Severe infections can lead to leaf distortion and reduced yield."
+
+  utter_blister_blight_treatment:
+  - text: "Treatment for blister blight involves the application of fungicides to prevent the spread of the disease. Cultural practices such as proper sanitation and pruning can also help manage the disease."
+
+  utter_explain_twig_die_back:
+  - text: "Twig die back, also known as stem canker, is a disease characterized by the death and decay of tea plant twigs and stems. It is often caused by fungal pathogens such as Colletotrichum theae-sinensis. Proper pruning and management practices are essential to control its spread."
+
+  utter_twig_die_back_symptoms:
+  - text: "Symptoms of twig die back include wilting, dieback of twigs and stems, and the formation of cankers or lesions on the affected plant parts. Infected plants may also exhibit stunted growth and reduced vigor."
+
+  utter_twig_die_back_treatment:
+  - text: "Treatment for twig die back involves the removal of infected plant parts through pruning. Fungicidal sprays may also be applied to prevent further spread of the disease. Proper sanitation and cultural practices are important for disease management."
+
+  utter_explain_brown_root_rot:
+  - text: "Brown root rot is a fungal disease caused by the fungus Phellinus noxius. It affects the roots of tea plants, leading to decay and ultimately death of the plant."
+
+  utter_brown_root_rot_symptoms:
+  - text: "Symptoms of brown root rot include wilting of leaves, yellowing of foliage, stunted growth, and decayed roots. Infected plants may also exhibit poor vigor and decreased yield."
+
+  utter_brown_root_rot_treatment:
+  - text: "There is no specific treatment for brown root rot once a plant is infected. However, preventive measures such as proper soil drainage, maintaining healthy soil conditions, and using disease-resistant varieties can help manage the disease."
+
+  utter_brown_root_rot_occurrence_reason:
+  - text: "Brown root rot occurs due to the presence of the pathogenic fungus Phellinus noxius in the soil. Factors such as poor soil drainage, high soil moisture, and planting susceptible varieties can contribute to its occurrence."
+
+  utter_red_root_rot_explanation:
+  - text: "Red root rot, also known as Fusarium wilt, is a fungal disease caused by Fusarium oxysporum. It affects the roots of tea plants, causing discoloration and rotting."
+
+  utter_red_root_rot_symptoms:
+  - text: "The symptoms of red root rot include wilting of leaves, yellowing and browning of foliage, stunted growth, and eventually death of the plant."
+
+  utter_red_root_rot_treatment:
+  - text: "Treatment of red root rot involves proper sanitation practices, such as removing infected plants, and applying fungicides to prevent further spread. Soil sterilization techniques may also be employed."
+
+  utter_red_root_rot_occurrence_reason:
+  - text: "Red root rot occurs due to the presence of Fusarium oxysporum in the soil. It can be introduced through contaminated soil, infected plant material, or poor soil drainage conditions."
+
+  utter_frost_damage_explanation:
+  - text: "Frost damage occurs when tea plants are exposed to freezing temperatures, leading to cellular damage and tissue death."
+
+  utter_frost_damage_symptoms:
+  - text: "Symptoms of frost damage include wilting, browning of leaves, and blackened tissues."
+
+  utter_frost_damage_treatment:
+  - text: "Treatment for frost damage involves pruning affected areas, providing adequate water and nutrients, and protecting plants from further frost exposure."
+
+  utter_frost_damage_occurrence_reason:
+  - text: "Frost damage typically occurs during periods of cold weather, especially during late spring or early autumn when temperatures drop unexpectedly."
+
+  utter_tea_wilt_disease_explanation:
+  - text: "Tea wilt disease is caused by fungal pathogens infecting the root system, leading to wilting and death of tea plants."
+
+  utter_tea_wilt_disease_symptoms:
+  - text: "Symptoms of tea wilt disease include wilting of leaves, yellowing or browning of foliage, and stunted growth."
+
+  utter_tea_wilt_disease_treatment:
+  - text: "Treatment for tea wilt disease involves removing infected plants, improving drainage, and applying fungicides to prevent further spread."
+
+  utter_tea_wilt_disease_occurrence_reason:
+  - text: "Tea wilt disease is more common in poorly drained soils and areas with high humidity, which create favorable conditions for fungal growth."
+
+  utter_nlu_fallback:
+  - text: "I'm sorry, I didn't understand that. Could you please rephrase your question?"
+  - text: "I'm not sure I follow. Could you provide more context or try asking in a different way?"
+  - text: "I'm afraid I didn't catch that. Can you please repeat or rephrase your query?"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+actions:
+  - utter_greet
+  - utter_thank_you
+  - utter_cheer_up
+  - utter_did_that_help
+  - utter_happy
+  - utter_goodbye
+  - utter_what_can_you_do
+  - utter_how_can_you_help
+  - utter_offer_additional_information
+  - utter_help_confusion
+  - utter_explain_anthracnose
+  - utter_anthracnose_symptoms
+  - utter_anthracnose_management
+  - utter_explain_algal_leaf
+  - utter_algal_leaf_symptoms
+  - utter_algal_leaf_management
+  - utter_explain_bird_eye_spot
+  - utter_bird_eye_spot_symptoms
+  - utter_bird_eye_spot_management
+  - utter_explain_brown_blight
+  - utter_brown_blight_symptoms
+  - utter_brown_blight_management
+  - utter_gray_light_symptoms
+  - utter_gray_light_management
+  - utter_white_spot_symptoms
+  - utter_white_spot_management
+  - utter_red_leaf_spot_symptoms
+  - utter_red_leaf_spot_management
+  - utter_anthracnose_causes
+  - utter_algal_leaf_causes
+  - utter_bird_eye_spot_causes
+  - utter_brown_blight_causes
+  - utter_gray_light_causes
+  - utter_white_spot_causes
+  - utter_red_leaf_spot_causes
+  - utter_anthracnose_distribution
+  - utter_algal_leaf_distribution
+  - utter_bird_eye_spot_distribution
+  - utter_brown_blight_distribution
+  - utter_gray_light_distribution
+  - utter_white_spot_distribution
+  - utter_red_leaf_spot_distribution
+  - utter_anthracnose_prevention
+  - utter_algal_leaf_prevention
+  - utter_bird_eye_spot_prevention
+  - utter_brown_blight_prevention
+  - utter_gray_light_prevention
+  - utter_white_spot_prevention
+  - utter_red_leaf_spot_prevention
+  - utter_anthracnose_spread_prevention
+  - utter_algal_leaf_spread_prevention
+  - utter_bird_eye_spot_spread_prevention
+  - utter_brown_blight_spread_prevention
+  - utter_gray_light_spread_prevention
+  - utter_white_spot_spread_prevention
+  - utter_red_leaf_spot_spread_prevention
+  - utter_anthracnose_symptoms_additional
+  - utter_anthracnose_occurrence_reasons
+  - utter_anthracnose_remedies
+  - utter_algal_leaf_symptoms_additional
+  - utter_algal_leaf_occurrence_reasons
+  - utter_algal_leaf_remedies
+  - utter_bird_eye_spot_symptoms_additional
+  - utter_bird_eye_spot_occurrence_reasons
+  - utter_bird_eye_spot_remedies
+  - utter_brown_blight_symptoms_additional
+  - utter_brown_blight_occurrence_reasons
+  - utter_brown_blight_remedies
+  - utter_gray_light_symptoms_additional
+  - utter_gray_light_occurrence_reasons
+  - utter_gray_light_remedies
+  - utter_white_spot_symptoms_additional
+  - utter_white_spot_occurrence_reasons
+  - utter_white_spot_remedies
+  - utter_red_leaf_spot_symptoms_additional
+  - utter_red_leaf_spot_occurrence_reasons
+  - utter_red_leaf_spot_remedies
+  - utter_explain_tea_mosquito_bug
+  - utter_tea_mosquito_bug_impact
+  - utter_tea_mosquito_bug_management
+  - utter_explain_red_spider_mite
+  - utter_red_spider_mite_impact
+  - utter_red_spider_mite_management
+  - utter_explain_tea_green_leafhopper
+  - utter_tea_green_leafhopper_impact
+  - utter_tea_green_leafhopper_management
+  - utter_explain_blister_blight
+  - utter_blister_blight_symptoms
+  - utter_blister_blight_treatment
+  - utter_explain_twig_die_back
+  - utter_twig_die_back_symptoms
+  - utter_twig_die_back_treatment
+  - utter_explain_brown_root_rot
+  - utter_brown_root_rot_symptoms
+  - utter_brown_root_rot_treatment
+  - utter_brown_root_rot_occurrence_reason
+  - utter_red_root_rot_explanation
+  - utter_red_root_rot_symptoms
+  - utter_red_root_rot_treatment
+  - utter_red_root_rot_occurrence_reason
+  - utter_frost_damage_explanation
+  - utter_frost_damage_symptoms
+  - utter_frost_damage_treatment
+  - utter_frost_damage_occurrence_reason
+  - utter_tea_wilt_disease_explanation
+  - utter_tea_wilt_disease_symptoms
+  - utter_tea_wilt_disease_treatment
+  - utter_tea_wilt_disease_occurrence_reason
+  - utter_nlu_fallback
+  - utter_iamabot
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
